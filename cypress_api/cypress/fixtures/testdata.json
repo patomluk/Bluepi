@@ -1,0 +1,11 @@
+{
+    "valid_data" : {
+      "phone_number" : "0814257799",
+      "user_pin" : "111111"
+    },
+    "invalid_data" : {
+      "phone_number" : "0814257799",
+      "user_pin" : "111111"
+    }
+}
+  
