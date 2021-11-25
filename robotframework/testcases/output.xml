@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.4 on win32)" generated="20211125 18:17:16.770" rpa="false">
+<suite id="s1" name="Qa Challenge" source="C:\Users\Liez\Documents\GitHub\Bluepi\robotframework\testcases\qa_challenge.robot">
+<test id="s1-t1" name="ADD multi ITEM Success">
+<kw name="Goto Website" library="common" type="setup">
+<arguments>
+<arg>${weburl}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20211125 18:17:16.949" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" starttime="20211125 18:17:16.949" endtime="20211125 18:17:18.759"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:16.949" endtime="20211125 18:17:18.759"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<assign>
+<var>${sometext}</var>
+</assign>
+<msg timestamp="20211125 18:17:18.760" level="INFO">${sometext} = OIktS</msg>
+<status status="PASS" starttime="20211125 18:17:18.759" endtime="20211125 18:17:18.760"></status>
+</kw>
+<kw name="Input Text To Field ADD ITEM" library="add_item_page">
+<arguments>
+<arg>${sometext}</arg>
+</arguments>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${input_txt_item_name}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:18.760" endtime="20211125 18:17:18.792"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_txt_item_name}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:18.792" level="INFO">Typing text 'OIktS' into text field '//input[@class='mdl-textfield__input']'.</msg>
+<status status="PASS" starttime="20211125 18:17:18.792" endtime="20211125 18:17:18.838"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:18.760" endtime="20211125 18:17:18.838"></status>
+</kw>
+<kw name="Click Button +" library="add_item_page">
+<kw name="Verify and Click Element" library="common">
+<arguments>
+<arg>${button_add_item}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:18.839" endtime="20211125 18:17:18.859"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:18.859" level="INFO">Clicking element '//button[@class='mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored']'.</msg>
+<status status="PASS" starttime="20211125 18:17:18.859" endtime="20211125 18:17:18.891"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:18.839" endtime="20211125 18:17:18.891"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:18.839" endtime="20211125 18:17:18.892"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<assign>
+<var>${sometext2}</var>
+</assign>
+<msg timestamp="20211125 18:17:18.892" level="INFO">${sometext2} = ATtfN</msg>
+<status status="PASS" starttime="20211125 18:17:18.892" endtime="20211125 18:17:18.892"></status>
+</kw>
+<kw name="Input Text To Field ADD ITEM" library="add_item_page">
+<arguments>
+<arg>${sometext2}</arg>
+</arguments>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${input_txt_item_name}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:18.893" endtime="20211125 18:17:18.909"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_txt_item_name}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:18.909" level="INFO">Typing text 'ATtfN' into text field '//input[@class='mdl-textfield__input']'.</msg>
+<status status="PASS" starttime="20211125 18:17:18.909" endtime="20211125 18:17:18.948"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:18.892" endtime="20211125 18:17:18.948"></status>
+</kw>
+<kw name="Click Button +" library="add_item_page">
+<kw name="Verify and Click Element" library="common">
+<arguments>
+<arg>${button_add_item}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:18.949" endtime="20211125 18:17:18.964"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:18.964" level="INFO">Clicking element '//button[@class='mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored']'.</msg>
+<status status="PASS" starttime="20211125 18:17:18.964" endtime="20211125 18:17:18.986"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:18.949" endtime="20211125 18:17:18.986"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:18.949" endtime="20211125 18:17:18.986"></status>
+</kw>
+<kw name="Click Tab TO-DO TASKS" library="add_item_page">
+<kw name="Verify and Click Element" library="common">
+<arguments>
+<arg>${tab_todo}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:18.987" endtime="20211125 18:17:19.003"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:19.003" level="INFO">Clicking element '//a[contains(@class,"mdl-tabs__tab") and text()='To-Do Tasks']'.</msg>
+<status status="PASS" starttime="20211125 18:17:19.003" endtime="20211125 18:17:19.040"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:18.987" endtime="20211125 18:17:19.040"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:18.986" endtime="20211125 18:17:19.040"></status>
+</kw>
+<kw name="Verify Tasks TO DO by name" library="to_do_page">
+<arguments>
+<arg>${sometext}</arg>
+</arguments>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${task_name}</arg>
+<arg>{name}</arg>
+<arg>${text}</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<msg timestamp="20211125 18:17:19.041" level="INFO">${element} = //span[@class="mdl-checkbox__label" and text()='OIktS']</msg>
+<status status="PASS" starttime="20211125 18:17:19.041" endtime="20211125 18:17:19.041"></status>
+</kw>
+<kw name="Verify Element" library="common">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:19.042" endtime="20211125 18:17:19.060"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:19.041" endtime="20211125 18:17:19.060"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:19.041" endtime="20211125 18:17:19.060"></status>
+</kw>
+<kw name="Verify Tasks TO DO by name" library="to_do_page">
+<arguments>
+<arg>${sometext2}</arg>
+</arguments>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${task_name}</arg>
+<arg>{name}</arg>
+<arg>${text}</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<msg timestamp="20211125 18:17:19.061" level="INFO">${element} = //span[@class="mdl-checkbox__label" and text()='ATtfN']</msg>
+<status status="PASS" starttime="20211125 18:17:19.061" endtime="20211125 18:17:19.061"></status>
+</kw>
+<kw name="Verify Element" library="common">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:19.061" endtime="20211125 18:17:19.077"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:19.061" endtime="20211125 18:17:19.077"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:19.061" endtime="20211125 18:17:19.077"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211125 18:17:19.078" endtime="20211125 18:17:21.193"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:16.948" endtime="20211125 18:17:21.195" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Checkbox multi Task Success">
+<kw name="Goto Website" library="common" type="setup">
+<arguments>
+<arg>${weburl}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20211125 18:17:21.204" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" starttime="20211125 18:17:21.203" endtime="20211125 18:17:23.496"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:21.201" endtime="20211125 18:17:23.496"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<assign>
+<var>${sometext}</var>
+</assign>
+<msg timestamp="20211125 18:17:23.497" level="INFO">${sometext} = OMlvB</msg>
+<status status="PASS" starttime="20211125 18:17:23.497" endtime="20211125 18:17:23.498"></status>
+</kw>
+<kw name="Input Text To Field ADD ITEM" library="add_item_page">
+<arguments>
+<arg>${sometext}</arg>
+</arguments>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${input_txt_item_name}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.498" endtime="20211125 18:17:23.531"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_txt_item_name}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.531" level="INFO">Typing text 'OMlvB' into text field '//input[@class='mdl-textfield__input']'.</msg>
+<status status="PASS" starttime="20211125 18:17:23.531" endtime="20211125 18:17:23.578"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.498" endtime="20211125 18:17:23.579"></status>
+</kw>
+<kw name="Click Button +" library="add_item_page">
+<kw name="Verify and Click Element" library="common">
+<arguments>
+<arg>${button_add_item}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.580" endtime="20211125 18:17:23.599"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.599" level="INFO">Clicking element '//button[@class='mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored']'.</msg>
+<status status="PASS" starttime="20211125 18:17:23.599" endtime="20211125 18:17:23.628"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.579" endtime="20211125 18:17:23.628"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.579" endtime="20211125 18:17:23.628"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<assign>
+<var>${sometext2}</var>
+</assign>
+<msg timestamp="20211125 18:17:23.629" level="INFO">${sometext2} = ekt6E</msg>
+<status status="PASS" starttime="20211125 18:17:23.628" endtime="20211125 18:17:23.629"></status>
+</kw>
+<kw name="Input Text To Field ADD ITEM" library="add_item_page">
+<arguments>
+<arg>${sometext2}</arg>
+</arguments>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${input_txt_item_name}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.629" endtime="20211125 18:17:23.648"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_txt_item_name}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.649" level="INFO">Typing text 'ekt6E' into text field '//input[@class='mdl-textfield__input']'.</msg>
+<status status="PASS" starttime="20211125 18:17:23.648" endtime="20211125 18:17:23.686"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.629" endtime="20211125 18:17:23.686"></status>
+</kw>
+<kw name="Click Button +" library="add_item_page">
+<kw name="Verify and Click Element" library="common">
+<arguments>
+<arg>${button_add_item}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.687" endtime="20211125 18:17:23.701"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.702" level="INFO">Clicking element '//button[@class='mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored']'.</msg>
+<status status="PASS" starttime="20211125 18:17:23.702" endtime="20211125 18:17:23.723"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.686" endtime="20211125 18:17:23.723"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.686" endtime="20211125 18:17:23.723"></status>
+</kw>
+<kw name="Click Tab TO-DO TASKS" library="add_item_page">
+<kw name="Verify and Click Element" library="common">
+<arguments>
+<arg>${tab_todo}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.725" endtime="20211125 18:17:23.741"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.741" level="INFO">Clicking element '//a[contains(@class,"mdl-tabs__tab") and text()='To-Do Tasks']'.</msg>
+<status status="PASS" starttime="20211125 18:17:23.741" endtime="20211125 18:17:23.777"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.724" endtime="20211125 18:17:23.778"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.724" endtime="20211125 18:17:23.778"></status>
+</kw>
+<kw name="Checkbox Tasks" library="to_do_page">
+<arguments>
+<arg>${sometext}</arg>
+</arguments>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${task_name}</arg>
+<arg>{name}</arg>
+<arg>${text}</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<msg timestamp="20211125 18:17:23.779" level="INFO">${element} = //span[@class="mdl-checkbox__label" and text()='OMlvB']</msg>
+<status status="PASS" starttime="20211125 18:17:23.779" endtime="20211125 18:17:23.779"></status>
+</kw>
+<kw name="Verify and Click Element" library="common">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.779" endtime="20211125 18:17:23.797"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.798" level="INFO">Clicking element '//span[@class="mdl-checkbox__label" and text()='OMlvB']'.</msg>
+<status status="PASS" starttime="20211125 18:17:23.797" endtime="20211125 18:17:23.835"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.779" endtime="20211125 18:17:23.835"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.778" endtime="20211125 18:17:23.835"></status>
+</kw>
+<kw name="Checkbox Tasks" library="to_do_page">
+<arguments>
+<arg>${sometext2}</arg>
+</arguments>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${task_name}</arg>
+<arg>{name}</arg>
+<arg>${text}</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<msg timestamp="20211125 18:17:23.836" level="INFO">${element} = //span[@class="mdl-checkbox__label" and text()='ekt6E']</msg>
+<status status="PASS" starttime="20211125 18:17:23.836" endtime="20211125 18:17:23.837"></status>
+</kw>
+<kw name="Verify and Click Element" library="common">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.837" endtime="20211125 18:17:23.854"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.854" level="INFO">Clicking element '//span[@class="mdl-checkbox__label" and text()='ekt6E']'.</msg>
+<status status="PASS" starttime="20211125 18:17:23.854" endtime="20211125 18:17:23.883"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.837" endtime="20211125 18:17:23.883"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.836" endtime="20211125 18:17:23.883"></status>
+</kw>
+<kw name="Verify Tasks TO DO not visible by name" library="to_do_page">
+<arguments>
+<arg>${sometext}</arg>
+</arguments>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${task_name}</arg>
+<arg>{name}</arg>
+<arg>${text}</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<msg timestamp="20211125 18:17:23.884" level="INFO">${element} = //span[@class="mdl-checkbox__label" and text()='OMlvB']</msg>
+<status status="PASS" starttime="20211125 18:17:23.884" endtime="20211125 18:17:23.884"></status>
+</kw>
+<kw name="Verify Element Is Not Visible" library="common">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<kw name="Wait Until Element Is Not Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.884" endtime="20211125 18:17:23.888"></status>
+</kw>
+<kw name="Element Should Not Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.893" level="INFO">Element '//span[@class="mdl-checkbox__label" and text()='OMlvB']' did not exist.</msg>
+<status status="PASS" starttime="20211125 18:17:23.889" endtime="20211125 18:17:23.893"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.884" endtime="20211125 18:17:23.893"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.883" endtime="20211125 18:17:23.894"></status>
+</kw>
+<kw name="Verify Tasks TO DO not visible by name" library="to_do_page">
+<arguments>
+<arg>${sometext2}</arg>
+</arguments>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${task_name}</arg>
+<arg>{name}</arg>
+<arg>${text}</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<msg timestamp="20211125 18:17:23.894" level="INFO">${element} = //span[@class="mdl-checkbox__label" and text()='ekt6E']</msg>
+<status status="PASS" starttime="20211125 18:17:23.894" endtime="20211125 18:17:23.895"></status>
+</kw>
+<kw name="Verify Element Is Not Visible" library="common">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<kw name="Wait Until Element Is Not Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.895" endtime="20211125 18:17:23.901"></status>
+</kw>
+<kw name="Element Should Not Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.906" level="INFO">Element '//span[@class="mdl-checkbox__label" and text()='ekt6E']' did not exist.</msg>
+<status status="PASS" starttime="20211125 18:17:23.901" endtime="20211125 18:17:23.906"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.895" endtime="20211125 18:17:23.906"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.894" endtime="20211125 18:17:23.906"></status>
+</kw>
+<kw name="Click Tab COMPLETED" library="to_do_page">
+<kw name="Verify and Click Element" library="common">
+<arguments>
+<arg>${tab_complete}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.907" endtime="20211125 18:17:23.921"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20211125 18:17:23.922" level="INFO">Clicking element '//a[contains(@class,"mdl-tabs__tab") and text()='Completed']'.</msg>
+<status status="PASS" starttime="20211125 18:17:23.922" endtime="20211125 18:17:23.950"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.907" endtime="20211125 18:17:23.951"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.906" endtime="20211125 18:17:23.951"></status>
+</kw>
+<kw name="Verify Tasks Complete by name" library="complete_page">
+<arguments>
+<arg>${sometext}</arg>
+</arguments>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${task_complete_name}</arg>
+<arg>{name}</arg>
+<arg>${text}</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<msg timestamp="20211125 18:17:23.952" level="INFO">${element} = //ul[@id='completed-tasks']//span[contains(text(),'OMlvB')]</msg>
+<status status="PASS" starttime="20211125 18:17:23.951" endtime="20211125 18:17:23.952"></status>
+</kw>
+<kw name="Verify Element" library="common">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.952" endtime="20211125 18:17:23.969"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.952" endtime="20211125 18:17:23.969"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.951" endtime="20211125 18:17:23.969"></status>
+</kw>
+<kw name="Verify Tasks Complete by name" library="complete_page">
+<arguments>
+<arg>${sometext2}</arg>
+</arguments>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${task_complete_name}</arg>
+<arg>{name}</arg>
+<arg>${text}</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<msg timestamp="20211125 18:17:23.970" level="INFO">${element} = //ul[@id='completed-tasks']//span[contains(text(),'ekt6E')]</msg>
+<status status="PASS" starttime="20211125 18:17:23.970" endtime="20211125 18:17:23.970"></status>
+</kw>
+<kw name="Verify Element" library="common">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20211125 18:17:23.970" endtime="20211125 18:17:23.985"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.970" endtime="20211125 18:17:23.986"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:23.970" endtime="20211125 18:17:23.986"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211125 18:17:23.986" endtime="20211125 18:17:26.088"></status>
+</kw>
+<status status="PASS" starttime="20211125 18:17:21.199" endtime="20211125 18:17:26.089" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20211125 18:17:16.771" endtime="20211125 18:17:26.095"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Qa Challenge">Qa Challenge</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
